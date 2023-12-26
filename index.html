@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <body>
+    <h1>Rectangle</h1>
+    <canvas id="rectangle" width="640" height="480"></canvas>
+    <script>
+        /* rectangle */
+          var canvas = document.getElementById('rectangle');
+          var cvs = canvas.getContext('2d');
+          cvs.beginPath(); /* 図形を描き始めることを宣言 */
+          cvs.rect(20,20,80,80);
+          cvs.closePath(); /* 描いた線を閉じる */
+          cvs.stroke(); /* 描いた図形を線で表示させる */
+        </script>
+</body>
+</html>
